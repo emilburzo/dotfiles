@@ -3,8 +3,10 @@
 #
 
 export PATH=~/bin:$PATH
+export PATH=$PATH:~/devel/go/bin
 export EDITOR=vim
 export BROWSER=chromium
+export GOPATH=~/devel/go
 export TERMCMD="x-term"
 export GTK2_RC_FILES="/etc/gtk-2.0/gtkrc:$HOME/.gtkrc-2.0"
 export GTK_THEME=Adwaita:dark
