@@ -2,7 +2,9 @@
 # ~/.bashrc
 #
 
-export PATH=~/bin:$PATH
+export HISTSIZE=50000
+export HISTFILESIZE=100000
+export PATH=~/bin:$PATH:/home/eaglex/.gem/ruby/2.3.0/bin
 export PATH=$PATH:~/devel/go/bin
 export EDITOR=vim
 export BROWSER=chromium
