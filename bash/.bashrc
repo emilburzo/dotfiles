@@ -32,5 +32,5 @@ BLUE="\033[1;34m"
 GRAY="\033[0;38m"
 GREEN="\033[0;32m"
 
-export PS1="$GREEN[$GRAY\t$GREEN] [$BLUE\h$GREEN]    $WHITE\w  \n$GREEN$ $WHITE"
+export PS1="$GREEN[$WHITE\t$GREEN] [$BLUE\h$GREEN]    $WHITE\w  \n$GREEN$ $WHITE"
 
