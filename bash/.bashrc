@@ -5,7 +5,7 @@
 export HISTSIZE=50000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoredups:erasedups
-export PATH=~/bin:$PATH:/home/eaglex/.gem/ruby/2.3.0/bin
+export PATH=~/bin:$PATH:~/.gem/ruby/2.4.0/bin
 export PATH=$PATH:~/devel/go/bin
 export EDITOR=vim
 export BROWSER=google-chrome-stable
@@ -26,6 +26,11 @@ alias bc="bc -l"
 alias rot13="tr a-zA-Z n-za-mN-ZA-M"
 alias xflux="xflux -l 47.6667 -g 23.5833"
 
-export PS1="\[\033[0;32m\][\033[0;37m\t\[\033[0;32m\]] [\033[1;34m\h\[\033[0;32m\]]\[\033[0;32m\]\[\033[0;38m\] \[\033[0;32m\][\[ \033[0;37m\]\w\[\033[0;32m\] ]\[\033[0;38m\] \n\[\033[0;32m\]$\[\033[0;37m\] "
+# prompt
+WHITE="\033[0;37m"
+BLUE="\033[1;34m"
+GRAY="\033[0;38m"
+GREEN="\033[0;32m"
 
+export PS1="$GREEN[$GRAY\t$GREEN] [$BLUE\h$GREEN]    $WHITE\w  \n$GREEN$ $WHITE"
 
