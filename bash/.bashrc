@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+# autojump
+source /etc/profile.d/autojump.bash
+
 export HISTSIZE=50000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoredups:erasedups
@@ -13,6 +16,7 @@ export GOPATH=~/devel/go
 export TERMCMD="x-term"
 export GTK2_RC_FILES="/etc/gtk-2.0/gtkrc:$HOME/.gtkrc-2.0"
 export GTK_THEME=Adwaita:dark
+export VDPAU_DRIVER=va_gl
 
 export LC_TIME="ro_RO.utf8"
 export LC_NUMERIC="ro_RO.utf8"
