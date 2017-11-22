@@ -16,7 +16,7 @@ export GOPATH=~/devel/go
 export TERMCMD="x-term"
 export GTK2_RC_FILES="/etc/gtk-2.0/gtkrc:$HOME/.gtkrc-2.0"
 export GTK_THEME=Adwaita:dark
-export VDPAU_DRIVER=va_gl
+#export VDPAU_DRIVER=va_gl
 
 export LC_TIME="ro_RO.utf8"
 export LC_NUMERIC="ro_RO.utf8"
@@ -38,3 +38,10 @@ GREEN="\[\033[0;32m\]"
 
 export PS1="$GREEN[$WHITE\t$GREEN] [$BLUE\h$GREEN]    $WHITE\w  \n$GREEN$ $WHITE"
 
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /home/eaglex/devel/work/komoot/chromeless/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /home/eaglex/devel/work/komoot/chromeless/serverless/node_modules/tabtab/.completions/serverless.bash
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /home/eaglex/devel/work/komoot/chromeless/serverless/node_modules/tabtab/.completions/sls.bash ] && . /home/eaglex/devel/work/komoot/chromeless/serverless/node_modules/tabtab/.completions/sls.bash
