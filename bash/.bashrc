@@ -5,8 +5,8 @@
 # autojump
 source /etc/profile.d/autojump.bash
 
-export HISTSIZE=50000
-export HISTFILESIZE=100000
+export HISTSIZE=500000
+export HISTFILESIZE=1000000
 export HISTCONTROL=ignoredups:erasedups
 export PATH=~/bin:$PATH:~/.gem/ruby/2.4.0/bin
 export PATH=$PATH:~/devel/go/bin
