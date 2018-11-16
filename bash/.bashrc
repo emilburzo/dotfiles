@@ -2,6 +2,12 @@
 # ~/.bashrc
 #
 
+# autojump
+source /etc/profile.d/autojump.bash
+
+# https://github.com/coinbase/assume-role
+source $(which assume-role)
+
 export HISTSIZE=500000
 export HISTFILESIZE=1000000
 export HISTCONTROL=ignoredups:erasedups
@@ -26,13 +32,6 @@ alias grep="grep --color=auto"
 alias bc="bc -l"
 alias rot13="tr a-zA-Z n-za-mN-ZA-M"
 alias xflux="xflux -l 47.6667 -g 23.5833"
-
-# autojump
-source /etc/profile.d/autojump.bash
-
-# https://github.com/coinbase/assume-role
-export AWS_ROLE_SESSION_TIMEOUT=43200
-source $(which assume-role)
 
 # prompt
 WHITE="\[\033[0;37m\]"
