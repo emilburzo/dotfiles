@@ -6,7 +6,7 @@
 source /etc/profile.d/autojump.bash
 
 # https://github.com/coinbase/assume-role
-source $(which assume-role)
+source ~/bin/assume-role
 
 export HISTSIZE=500000
 export HISTFILESIZE=1000000
