@@ -5,9 +5,6 @@
 # autojump
 source /etc/profile.d/autojump.bash
 
-# https://github.com/coinbase/assume-role
-source ~/bin/assume-role
-
 export HISTSIZE=500000
 export HISTFILESIZE=1000000
 export HISTCONTROL=ignoredups:erasedups
@@ -31,7 +28,7 @@ alias l="ls -lah --color=auto"
 alias grep="grep --color=auto"
 alias bc="bc -l"
 alias rot13="tr a-zA-Z n-za-mN-ZA-M"
-alias xflux="xflux -l 47.6667 -g 23.5833"
+alias xflux="xflux -l 47.6667 -g 23.5833 -r 1"
 
 # prompt
 WHITE="\[\033[0;37m\]"
@@ -40,4 +37,3 @@ GRAY="\[\033[0;38m\]"
 GREEN="\[\033[0;32m\]"
 
 export PS1="$GREEN[$WHITE\t$GREEN] [$BLUE\h$GREEN]$WHITE \$AWS_ACCOUNT_NAME:\$AWS_ACCOUNT_ROLE \w  \n$GREEN$ $WHITE"
-
