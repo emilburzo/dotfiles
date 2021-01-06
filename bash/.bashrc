@@ -11,7 +11,9 @@ source ~/.bash_secrets
 export HISTSIZE=500000
 export HISTFILESIZE=1000000
 export HISTCONTROL=ignoredups:erasedups
-export PATH=~/bin:"$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=$PYENV_ROOT/shims:$PATH
+export PATH=~/bin:$PATH
 export PATH=$PATH:~/devel/go/bin
 export EDITOR=vim
 export BROWSER=google-chrome-stable
@@ -39,4 +41,8 @@ BLUE="\[\033[1;34m\]"
 GRAY="\[\033[0;38m\]"
 GREEN="\[\033[0;32m\]"
 
-export PS1="$GREEN[$WHITE\t$GREEN] [$BLUE\h$GREEN]$WHITE \$AWS_ACCOUNT_NAME:\$AWS_ACCOUNT_ROLE \w  \n$GREEN$ $WHITE"
+if [ $USER != "eaglex" ]; then
+    export PS1="$GREEN[$WHITE\t$GREEN] [$GREEN\h$GREEN]$WHITE \$AWS_ACCOUNT_NAME:\$AWS_ACCOUNT_ROLE \w  \n$GREEN$ $WHITE"
+else
+    export PS1="$GREEN[$WHITE\t$GREEN] [$BLUE\h$GREEN]$WHITE \$AWS_ACCOUNT_NAME:\$AWS_ACCOUNT_ROLE \w  \n$GREEN$ $WHITE"
+fi
