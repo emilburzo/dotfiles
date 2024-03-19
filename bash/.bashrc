@@ -42,7 +42,7 @@ GRAY="\[\033[0;38m\]"
 GREEN="\[\033[0;32m\]"
 
 if [ $USER != "eaglex" ]; then
-    export PS1="$GREEN[$WHITE\t$GREEN] [$GREEN\h$GREEN]$WHITE \$AWS_ACCOUNT_NAME:\$AWS_ACCOUNT_ROLE \w  \n$GREEN$ $WHITE"
+    export PS1="$GREEN[$WHITE\t$GREEN] [$GREEN\h$GREEN]$WHITE [\$AWS_PROFILE] \w  \n$GREEN$ $WHITE"
 else
     export PS1="$GREEN[$WHITE\t$GREEN] [$BLUE\h$GREEN]$WHITE \$AWS_ACCOUNT_NAME:\$AWS_ACCOUNT_ROLE \w  \n$GREEN$ $WHITE"
 fi
